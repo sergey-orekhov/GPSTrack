@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GPSTrack" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZN-1w-ETc" userLabel="StartStopBtn">
+                                <rect key="frame" x="158.5" y="550" width="97" height="66"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="45"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="runTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w59-8p-7hI"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCB-ga-nag" userLabel="coordinatesLbl">
+                                <rect key="frame" x="171.5" y="200" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvf-Aj-U7L" userLabel="speedLbl">
+                                <rect key="frame" x="171.5" y="265" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WD7-L1-xTM" userLabel="timeLbl">
+                                <rect key="frame" x="177.5" y="368" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eG3-yI-CUy" userLabel="countLbl">
+                                <rect key="frame" x="177.5" y="418" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eG3-yI-CUy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3U0-Lr-cIE"/>
+                            <constraint firstItem="eCB-ga-nag" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-230" id="A3c-2o-hXB"/>
+                            <constraint firstItem="mZN-1w-ETc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="130" id="HYF-Mx-M0y"/>
+                            <constraint firstItem="WD7-L1-xTM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-70" id="NJL-Zh-4mp"/>
+                            <constraint firstItem="eG3-yI-CUy" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-20" id="W96-kk-BfU"/>
+                            <constraint firstItem="mZN-1w-ETc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WNH-dd-1JH"/>
+                            <constraint firstItem="qvf-Aj-U7L" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="eEw-9Y-0jI"/>
+                            <constraint firstItem="eCB-ga-nag" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="etm-bt-K5O"/>
+                            <constraint firstItem="WD7-L1-xTM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mFg-bg-7UB"/>
+                            <constraint firstItem="qvf-Aj-U7L" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-170" id="nuD-4z-lgi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="coordinatesLbl" destination="eCB-ga-nag" id="sj6-ml-kty"/>
+                        <outlet property="countLbl" destination="eG3-yI-CUy" id="bBM-9i-xMP"/>
+                        <outlet property="runBtn" destination="mZN-1w-ETc" id="Sc0-JQ-cTB"/>
+                        <outlet property="speedLbl" destination="qvf-Aj-U7L" id="xhL-af-kUN"/>
+                        <outlet property="timeLbl" destination="WD7-L1-xTM" id="Wt0-oK-Xvy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+</document>
