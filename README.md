@@ -1,3 +1,3 @@
 # GPSTrack
 
-## A small project to write GPS tracks.
+## A small tool for capturing GPS coordinates dirung the driving for using them later for emulation.
